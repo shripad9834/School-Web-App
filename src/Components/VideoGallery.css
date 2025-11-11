@@ -1,0 +1,40 @@
+.video-thumbnail {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 180px;
+}
+
+.video-thumbnail video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.video-thumbnail:hover video {
+  transform: scale(1.05);
+}
+
+.video-thumbnail .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-thumbnail:hover .overlay {
+  opacity: 1;
+}
+
+.video-thumbnail .play-icon {
+  font-size: 2rem;
+  color: #fff;
+}

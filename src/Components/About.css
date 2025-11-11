@@ -1,0 +1,21 @@
+.about-page {
+  background: linear-gradient(135deg, #f0f4f8, #ffffff);
+  min-height: 100vh;
+}
+
+.school-card {
+  border-left: 6px solid #007bff; /* Bootstrap primary blue */
+}
+
+.about-card {
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+
+.vision-card {
+  border-left: 6px solid #28a745;
+}
+
+.mission-card {
+  border-left: 6px solid #dc3545;
+}

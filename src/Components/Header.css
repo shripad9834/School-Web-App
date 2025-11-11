@@ -1,0 +1,84 @@
+/* Ensure default nav-link color matches across all items */
+.nav-link {
+  color: #212529; /* Bootstrap default nav-link color */
+}
+
+/* Active nav-link and dropdown toggle styles */
+.nav-link.active,
+.nav-link.dropdown-toggle.active {
+  color: #0d6efd !important; /* Bootstrap primary color */
+  font-weight: bold;
+}
+
+/* Active dropdown item styles */
+.dropdown-item.active {
+  background-color: #0d6efd; /* Bootstrap primary color */
+  color: #fff !important; /* White text for contrast */
+}
+
+/* Desktop view adjustments */
+@media (min-width: 992px) {
+  .school-name-desktop {
+    flex: 1; /* Take available space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  .school-name-desktop h4 {
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 1.5rem; /* Adjust font size to fit better */
+    margin: 0; /* Remove default margins */
+  }
+  .navbar-brand img {
+    width: 80px; /* Slightly smaller logo to give more space */
+    height: 80px;
+  }
+  .navbar-nav {
+    flex-shrink: 0; /* Prevent nav items from shrinking */
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 991px) {
+  .navbar-wrapper {
+    position: relative; /* Positioning context for absolute elements */
+  }
+  .navbar {
+    padding-bottom: 0; /* Remove extra padding to prevent content shift */
+  }
+  .navbar-nav {
+    text-align: center; /* Center-align nav items in mobile */
+  }
+  .dropdown-menu {
+    text-align: center; /* Center-align dropdown items */
+  }
+  .navbar-collapse {
+    background-color: #fff; /* Ensure collapsed menu has a background */
+    padding: 8px 0; /* Reduced padding for tighter layout */
+    margin-top: 0; /* Remove margin-top to prevent content push */
+  }
+  .nav-link,
+  .dropdown-toggle {
+    padding: 8px 0; /* Reduced padding for tighter spacing */
+  }
+  .school-name-mobile {
+    /* background-color: #fff; Match navbar background */
+    padding: 4px 0; /* Reduced padding to minimize space */
+    border-bottom: 1px solid #dee2e6; /* Subtle separator */
+    position: relative; /* Stay in document flow */
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other elements */
+  }
+  .school-name-mobile h6 {
+    margin: 0; /* Remove default margin to reduce space */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+  .navbar-brand img {
+    width: 60px; /* Smaller logo for mobile */
+    height: 60px;
+  }
+  /* Adjust content below navbar */
+  .navbar-wrapper + * {
+    margin-top: 10px; /* Reduced margin to bring content closer */
+  }
+}

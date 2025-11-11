@@ -1,0 +1,18 @@
+.event-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.event-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
