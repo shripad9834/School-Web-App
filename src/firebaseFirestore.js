@@ -32,12 +32,12 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig2 = {
-  apiKey: 'AIzaSyCqqICmiYdmRAQkY7yyAjtFZywXXCUn6ww',
-  authDomain: 'restaurants-b1462.firebaseapp.com  ',
-  projectId: 'restaurants-b1462',
-  storageBucket: 'restaurants-b1462.firebasestorage.app',
-  messagingSenderId: '714590225373',
-  appId: '1:714590225373:web:17a80a9a01bf043dc96c34',
+  apiKey: process.env.REACT_APP_FIRESTORE_API_KEY,
+  authDomain: process.env.REACT_APP_FIRESTORE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIRESTORE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIRESTORE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIRESTORE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIRESTORE_APP_ID,
 };
 
 const app2 = initializeApp(firebaseConfig2, 'app2'); // ✅ give this a DIFFERENT name

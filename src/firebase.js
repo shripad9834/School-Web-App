@@ -63,12 +63,12 @@ import { getStorage } from 'firebase/storage';
 //import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig1 = {
-  apiKey: 'AIzaSyB9t66x6WuJXmOvYp3sToXplJXzY2nWVjY',
-  authDomain: 'image-server-87d0a.firebaseapp.com',
-  projectId: 'image-server-87d0a',
-  storageBucket: 'image-server-87d0a.appspot.com',
-  messagingSenderId: '25658743975',
-  appId: '1:25658743975:web:bd8bf6961fb8901a5d0f82',
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 const app1 = initializeApp(firebaseConfig1, 'app1'); // ✅ give this app a *name*
